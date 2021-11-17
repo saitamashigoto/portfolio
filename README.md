@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @saitamashigoto
-- 👀 I’m interested in Magento Development
-- 🌱 I’m currently learning Magento Framework
+- 👀 I have about 3 years of experience as a full stack developer.
+- 🌱 I'm developing, customization, and deploying Magento extensions.
 - 💞️ I’m looking to collaborate on Magento
 - 📫 How to reach me piyushgoelshigoto@gmail.com
 
