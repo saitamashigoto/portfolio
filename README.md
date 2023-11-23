@@ -2,7 +2,7 @@
 - 👀 ウェブアプリ開発において4年以上の経験を持っています。
 - 🌱 パイザSランクプログラマーです。
 - 📫 仕事の依頼は piyushgoel3020@gmail.comまで。
-- <img width="850" alt="image" src="https://github.com/saitamashigoto/saitamashigoto/assets/82385807/108f1d6d-d3e6-44a5-8746-89cdbfed99e7">
+<img width="850" alt="image" src="https://github.com/saitamashigoto/saitamashigoto/assets/82385807/108f1d6d-d3e6-44a5-8746-89cdbfed99e7">
 
 
 <!---
