@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --wrapper-bg-color: #fcf4d7;
+}
+
+html {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    height: 900px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2rem 1rem 4rem;
+    background-color: var(--wrapper-bg-color);
+    background-image:
+        linear-gradient(to right, #C8C8C8 2px, transparent 2px),
+        linear-gradient(to bottom, #C8C8C8 2px, transparent 2px);
+    background-size: 2rem 2rem;
+    background-position: center center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+header.banner {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 700px;
+    padding: 2.4rem 2rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: #7f664f solid 8px;
+}
+
+.search-icon {
+    justify-self: flex-start;
+}
+
+.name {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.close {
+    justify-self: flex-end;
+}
