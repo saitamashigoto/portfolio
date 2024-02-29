@@ -213,3 +213,33 @@ p {
     height: 20px;
     box-shadow: -4px 4px 0px 0px #7f664f;
 }
+
+.icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-radius: none;
+    background-color: transparent;
+    width: 630px;
+    height: 80px;
+    margin-top: .4rem;
+    padding: .7rem 1.2rem;
+}
+
+.icons> a {
+    display: block;
+}
+
+.icons > a:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.icons> a> img {
+    width: 32px;
+    height: 32px;
+}
+.icons > a > img.linked-in {
+    width: 36px;
+}
