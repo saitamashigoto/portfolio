@@ -20,19 +20,19 @@ body {
 }
 
 .inter-bold {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 2px;
-  font-variation-settings:
-    "slnt" 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-variation-settings:
+        "slnt"0;
 }
 
 .container {
-    width: 900px;
+    width: 90%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
     padding: 2rem 1rem 4rem;
     background-color: var(--wrapper-bg-color);
@@ -49,8 +49,8 @@ body {
         'wght'400,
         'GRAD'0,
         'opsz'24;
-    font-size: 52px;
-    font-weight: bold;
+    font-size: 3.2rem;
+    font-weight: 500;
 }
 
 header.banner {
@@ -58,8 +58,10 @@ header.banner {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    height: 75px;
-    width: 800px;
+    height: 8%;
+    width: 80%;
+    min-height: 45px;
+    max-width: 850px;
     margin-top: .8rem;
     padding: 2.3rem 2rem 2rem;
     background-color: white;
@@ -68,27 +70,25 @@ header.banner {
     outline: #7f664f solid 8px;
 }
 
-.search-icon {
-    justify-self: flex-start;
-}
-
 .name {
-    font-size: 52px;
-    font-weight: bold;
+    font-size: 3.2rem;
+    font-weight: 500;
 }
 
-.material-symbols-outlined.close {
+.close {
     justify-self: flex-end;
-    font-size: 42px;
+    font-size: 2.8rem;
 }
 
 main {
     margin-top: 2.6rem;
-    width: 700px;
+    width: 70%;
+    max-width: 710px;
     padding-bottom: 2.6rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
+    gap: 2.5rem;
     background-color: var(--wrapper-bg-color);
     border-radius: 5px;
     outline: #7f664f solid 8px;
@@ -96,7 +96,7 @@ main {
 }
 
 .circle {
-    height: 80px;
+    height: 75px;
     background-color: #ccd5ae;
     width: 100%;
     position: relative;
@@ -156,12 +156,12 @@ main {
 .hobbies {
     background-color: #ccd5ae;
     position: relative;
-    width: 630px;
-    height: 120px;
+    max-width: 90%;
+    min-height: 15%;
+    margin: 0 1.5rem;
     padding: .7rem 1.2rem;
     border-radius: .1rem;
     outline: #7f664f solid 8px;
-    margin-top: 2.5rem;
 }
 
 .php-experience,
@@ -174,7 +174,8 @@ h2 {
 }
 
 p {
-    width: 550px;
+    width: 90%;
+    max-width: 600px;
     text-align: center;
     color: #7f664f;
     font-weight: bold;
@@ -198,8 +199,8 @@ p {
     height: 70px;
     border-radius: 3rem;
     outline: #7f664f solid 4px;
-    background-image: repeating-linear-gradient(45deg, 		#A0A0A0 10px, 		#A0A0A0 11px, transparent 11px, transparent 28px),
-        repeating-linear-gradient(-45deg, 		#A0A0A0 10px, 		#A0A0A0 11px, transparent 11px, transparent 28px);
+    background-image: repeating-linear-gradient(45deg, #A0A0A0 10px, #A0A0A0 11px, transparent 11px, transparent 28px),
+        repeating-linear-gradient(-45deg, #A0A0A0 10px, #A0A0A0 11px, transparent 11px, transparent 28px);
 }
 
 .java:after {
@@ -220,26 +221,103 @@ p {
     justify-content: center;
     align-items: center;
     outline: none;
-    border-radius: none;
+    border-radius: 0;
     background-color: transparent;
-    width: 630px;
-    height: 80px;
-    margin-top: .4rem;
+    width: 90%;
+    max-width: 600px;
     padding: .7rem 1.2rem;
 }
 
-.icons> a {
+.icons>a {
     display: block;
 }
 
-.icons > a:not(:first-child) {
+.icons>a:not(:first-child) {
     margin-left: 1rem;
 }
 
-.icons> a> img {
+.icons>a>img {
     width: 32px;
     height: 32px;
 }
-.icons > a > img.linked-in {
+
+.icons>a>img.linked-in {
     width: 36px;
+}
+
+@media only screen and (max-width: 837px) {
+
+    .name,
+    .close,
+    .search-icon {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .search-icon,
+    .name,
+    .close {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 532px) {
+
+    .php,
+    .java {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 446px) {
+
+    .search-icon,
+    .name,
+    .close {
+        font-size: 1rem;
+    }
+
+    .name {
+        text-align: center;
+    }
+
+    header.banner>div:not(:last-child) {
+        padding-right: 1rem;
+    }
+
+    main {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 417px) {
+    main, header.banner {
+        width: 92%;
+    }
+    .cicle {
+        justify-content: space-evenly;
+    }
+    header.banner {
+        height: 5%;
+    }
+
 }
