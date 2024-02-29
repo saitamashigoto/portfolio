@@ -21,7 +21,6 @@ body {
 
 .container {
     width: 900px;
-    height: 900px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -76,7 +75,7 @@ header.banner {
 main {
     margin-top: 2.6rem;
     width: 700px;
-    height: 650px;
+    padding-bottom: 2.6rem;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -143,6 +142,7 @@ main {
     background-size: 5px 5px;
     box-shadow: 0px 4px 0px 0px #7f664f, 4px 0px 0px 0px #7f664f;
 }
+
 .php:before {
     content: "";
     display: inline-block;
@@ -153,4 +153,32 @@ main {
     width: 5px;
     height: 5px;
     box-shadow: 4px 0px 0px 0px #7f664f;
-} 
+}
+
+.intro,
+.php-experience,
+.java-experience,
+.hobbies,
+.links {
+    background-color: #ccd5ae;
+    width: 630px;
+    height: 120px;
+    padding: .6rem 1.2rem;
+    border-radius: .1rem;
+    outline: #7f664f solid 8px;
+    margin-top: 2.5rem;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    width: 550px;
+    text-align: center;
+    color: #7f664f;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
