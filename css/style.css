@@ -136,23 +136,9 @@ main {
     background-color: #ccd5ae;
     right: 3.5px;
     bottom: 0px;
-    width: 16.5px;
-    height: 10px;
-    background-repeat: no-repeat;
-    background-size: 5px 5px;
-    box-shadow: 0px 4px 0px 0px #7f664f, 4px 0px 0px 0px #7f664f;
-}
-
-.php:before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    background-color: #ccd5ae;
-    right: 3.5px;
-    bottom: -4px;
-    width: 5px;
-    height: 5px;
-    box-shadow: 4px 0px 0px 0px #7f664f;
+    width: 20px;
+    height: 13px;
+    box-shadow: 4px 4px 0px 0px #7f664f;
 }
 
 .intro,
@@ -160,12 +146,18 @@ main {
 .java-experience,
 .hobbies {
     background-color: #ccd5ae;
+    position: relative;
     width: 630px;
     height: 120px;
-    padding: .6rem 1.2rem;
+    padding: .7rem 1.2rem;
     border-radius: .1rem;
     outline: #7f664f solid 8px;
     margin-top: 2.5rem;
+}
+
+.php-experience,
+.hobbies {
+    background-color: #e5edcd;
 }
 
 h2 {
@@ -180,4 +172,36 @@ p {
     margin: 0;
     margin-top: 10px;
     font-size: 1.2rem;
+}
+
+.java {
+    position: absolute;
+    right: -4rem;
+    top: -3rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #a5ad89;
+    color: #7f664f;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 170px;
+    height: 70px;
+    border-radius: 3rem;
+    outline: #7f664f solid 4px;
+    background-image: repeating-linear-gradient(45deg, 		#A0A0A0 10px, 		#A0A0A0 11px, transparent 11px, transparent 28px),
+        repeating-linear-gradient(-45deg, 		#A0A0A0 10px, 		#A0A0A0 11px, transparent 11px, transparent 28px);
+}
+
+.java:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #a5ad89;
+    left: 5px;
+    bottom: 0px;
+    width: 30px;
+    height: 20px;
+    box-shadow: -4px 4px 0px 0px #7f664f;
 }
