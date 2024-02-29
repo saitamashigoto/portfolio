@@ -19,6 +19,16 @@ body {
     justify-content: center;
 }
 
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-variation-settings:
+    "slnt" 0;
+}
+
 .container {
     width: 900px;
     display: flex;
@@ -109,7 +119,7 @@ main {
     margin-left: 2.4rem;
 }
 
-.circle .php {
+.php {
     position: absolute;
     right: -3rem;
     top: -7px;
@@ -119,8 +129,7 @@ main {
     justify-content: center;
     background-color: #ccd5ae;
     color: #7f664f;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.6rem;
     width: 120px;
     height: 50px;
     border-radius: 1.5rem;
@@ -184,8 +193,7 @@ p {
     justify-content: center;
     background-color: #a5ad89;
     color: #7f664f;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem;
     width: 170px;
     height: 70px;
     border-radius: 3rem;
